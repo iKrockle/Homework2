@@ -40,15 +40,22 @@ public class Main {
         //task6
         var boxer1 = 78.2;
         var boxer2 = 82.7;
-        System.out.println(boxer1+boxer2);
-        System.out.println(boxer2-boxer1);
+        var sumWeight = boxer1+boxer2;
+        var diffWeight = boxer2-boxer1;
+        System.out.println(sumWeight);
+        System.out.println(diffWeight);
         //task7
-        System.out.println(boxer2-boxer1);
-        System.out.println(boxer2%boxer1);
+        diffWeight = boxer2-boxer1;
+        System.out.println(diffWeight);
+        diffWeight = boxer2%boxer1;
+        System.out.println(diffWeight);
         //task8
         var time = 640;
-        System.out.println("Всего работников в компании — "+time/8+" человек");
-        System.out.println("Если в компании работает "+(time/8+94)+" человек, то всего "+
-                (time/8+94)*8+" часов работы может быть поделено между сотрудниками");
+        var people = time/8;
+        var morePeople = people+94;
+        var moreTime = morePeople*8;
+        System.out.println("Всего работников в компании — "+people+" человек");
+        System.out.println("Если в компании работает "+morePeople+" человек, то всего "+
+                moreTime+" часов работы может быть поделено между сотрудниками");
     }
 }
